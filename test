@@ -1,0 +1,55 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix w3i: <https://w3id.org/>.
+
+w3i:
+    a skos:ConceptScheme;
+    dct:description "My wonderful vocabulary."@en;
+    dct:title "Test"@en;
+    skos:hasTopConcept w3i:00503, w3i:1a985, w3i:43463 .
+w3i:00503
+    a skos:Concept;
+    skos:narrower w3i:0aff7, w3i:3790e, w3i:4e8b0;
+    skos:prefLabel "Tee"@de;
+    skos:topConceptOf w3i: .
+w3i:0aff7
+    a skos:Concept;
+    skos:broader w3i:00503;
+    skos:inScheme w3i:;
+    skos:prefLabel "Sencha"@de.
+w3i:1a985
+    a skos:Concept;
+    skos:narrower w3i:2d23f, w3i:4c11f;
+    skos:prefLabel "Bier"@de;
+    skos:topConceptOf w3i: .
+w3i:2d23f
+    a skos:Concept;
+    skos:broader w3i:1a985;
+    skos:inScheme w3i:;
+    skos:prefLabel "Pils"@de.
+w3i:3790e
+    a skos:Concept;
+    skos:broader w3i:00503;
+    skos:inScheme w3i:;
+    skos:prefLabel "Matcha"@de.
+w3i:43463
+    a skos:Concept;
+    skos:altlabel "Coffee"@en;
+    skos:narrower w3i:5effe;
+    skos:prefLabel "Kaffee"@de;
+    skos:topConceptOf w3i: .
+w3i:4c11f
+    a skos:Concept;
+    skos:broader w3i:1a985;
+    skos:inScheme w3i:;
+    skos:prefLabel "Radler"@de.
+w3i:4e8b0
+    a skos:Concept;
+    skos:broader w3i:00503;
+    skos:inScheme w3i:;
+    skos:prefLabel "Mate"@de.
+w3i:5effe
+    a skos:Concept;
+    skos:broader w3i:43463;
+    skos:inScheme w3i:;
+    skos:prefLabel "Cappuccino"@de.
